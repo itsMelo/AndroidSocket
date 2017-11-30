@@ -108,4 +108,16 @@ public class SocketManager {
 
     }
 
+    public void stopSocket() {
+        udpSocket.stopUDPSocket();
+        tcpSocket.stopTcpConnection();
+
+        if (udpSocket != null) {
+            udpSocket = null;
+        }
+        if (tcpSocket != null) {
+            tcpSocket = null;
+        }
+    }
+
 }

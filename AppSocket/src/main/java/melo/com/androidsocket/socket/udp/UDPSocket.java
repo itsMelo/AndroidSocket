@@ -119,7 +119,7 @@ public class UDPSocket {
     }
 
     /**
-     * 开启发送数据的线程
+     * 开启接收数据的线程
      */
     private void startSocketThread() {
         clientThread = new Thread(new Runnable() {

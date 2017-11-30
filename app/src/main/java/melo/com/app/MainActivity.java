@@ -31,4 +31,10 @@ public class MainActivity extends AppCompatActivity {
     public void onViewClicked() {
 
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        manager.stopSocket();
+    }
 }

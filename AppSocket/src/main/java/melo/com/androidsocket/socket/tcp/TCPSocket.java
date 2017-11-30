@@ -178,7 +178,7 @@ public class TCPSocket {
         return false;
     }
 
-    private void stopTcpConnection() {
+    public void stopTcpConnection() {
         try {
             stopHeartbeatTimer();
             if (br != null) {
